@@ -1,0 +1,15 @@
+.container-shop-btn {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	width: 75%;
+	height: 100%;
+	margin-left: 25pt;
+}
+
+.btn-shp-item {
+	display: flex !important;
+	margin-top: 10pt !important;
+	justify-content: center !important;
+}

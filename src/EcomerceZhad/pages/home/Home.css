@@ -1,0 +1,64 @@
+.container-home {
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	grid-template-areas: 'gaNavBar' 'gaBody' 'gaFooter';
+	grid-template-columns: auto;
+	grid-template-rows: 120px 70% auto;
+}
+
+.navBar-component {
+	display: grid;
+	grid-area: gaNavBar;
+	grid-template-areas: 'navImg navCont';
+	max-height: 120px;
+}
+
+.body-component {
+	display: flex;
+	grid-area: gaBody;
+	grid-gap: 32px;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: flex-start;
+	overflow-y: auto;
+	padding: 40px;
+	background-color: #eaeef2;
+}
+
+.footer-component {
+	display: grid;
+	grid-area: gaFooter;
+	background: radial-gradient(
+		farthest-corner at -300px -99px,
+		#291d8dc2,
+		#1976ac9e 48%,
+		#2045add4 75%,
+		#234eeac9 75%
+	);
+}
+
+.navImg {
+}
+
+.navCont {
+}
+
+.footer-top {
+	height: 80px;
+}
+
+.sc-hd-line {
+	background: #e6e7eb;
+	height: 1px;
+	width: 100%;
+}
+
+.footer-bottom {
+	height: auto;
+}
+
+.container-new-item {
+	width: 100%;
+	text-align: right;
+}

@@ -1,0 +1,9 @@
+.cardDetail {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 3fr 1fr 1fr 1fr;
+	grid-area: 'photo name lastname dir';
+	border-radius: 4px;
+	border: 1pt solid black;
+	margin-bottom: 2pt;
+}

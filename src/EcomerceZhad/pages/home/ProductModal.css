@@ -1,0 +1,32 @@
+.form-saveProd {
+	display: grid;
+	align-content: center;
+	align-items: center;
+	min-width: 500px;
+	width: 100%;
+	padding: 10px;
+}
+
+.form-saveProd .MuiFormControl-root {
+	margin-top: 16px;
+}
+
+.container-buttons {
+	margin-top: 32px;
+	text-align: center;
+}
+
+.container-buttons .MuiButton-root.MuiButton-contained {
+	margin-right: 24px;
+}
+
+.container-image {
+	text-align: center;
+}
+.container-image img {
+	width: 100px;
+}
+
+.modal-title h2 {
+	margin-top: 0;
+}

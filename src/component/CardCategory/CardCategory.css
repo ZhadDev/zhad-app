@@ -1,0 +1,47 @@
+.containerCtgry {
+	display: grid;
+	grid-template-columns: 3fr 5fr 4fr;
+	grid-template-rows: 50% 50%;
+	grid-template-areas: 'ctgIcon ctgName ctgEdit' 'ctgIcon ctgName ctgDelete';
+	box-shadow: 5px 5px 15px rgb(0 0 0 / 30%);
+	font-family: 'Lato', sans-serif, sans-serif;
+	text-transform: uppercase;
+	padding: 4pt 4pt 8pt 0pt;
+	border-radius: 10px;
+	min-width: 350px;
+	max-height: 250px;
+	min-height: auto;
+	background-color: #fdfdfdd4;
+	grid-gap: 5pt;
+	max-width: 400px;
+	align-items: center;
+	justify-items: center;
+}
+
+.ctgName {
+	display: grid;
+	grid-area: ctgName;
+	align-content: center;
+	justify-content: center;
+	justify-content: space-around;
+}
+
+.ctgEdit {
+	display: grid;
+	grid-area: ctgEdit;
+	border-radius: 5pt;
+	width: 100%;
+}
+
+.ctgDelete {
+	display: grid;
+	grid-area: ctgDelete;
+	border-radius: 5pt;
+}
+
+.ctgIcon {
+	display: grid;
+	grid-area: ctgIcon;
+	border-radius: 5pt;
+	font-size: 40px;
+}

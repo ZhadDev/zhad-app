@@ -1,0 +1,168 @@
+.container {
+	display: grid;
+	grid-template-columns: 45% 55%;
+	grid-template-rows: 10% 25% 25% 20% 18%;
+	grid-template-areas:
+		'zIcon zCategory'
+		'zIcon zName'
+		'zIcon zPrice'
+		'zIcon zDesc'
+		'zBtnCrud zBtn';
+	box-shadow: 5px 5px 15px rgb(0 0 0 / 30%);
+	font-family: 'Lato', sans-serif, sans-serif;
+	text-transform: uppercase;
+	padding: 4pt 4pt 8pt 0pt;
+	border-radius: 10px;
+	min-width: 150px;
+	max-width: 400px;
+	max-height: 200px;
+	background-color: #fdfdfdd4;
+}
+
+.container-zIcon {
+	display: grid;
+	grid-area: zIcon;
+	padding: 8pt;
+	justify-content: center;
+	align-content: center;
+}
+
+.ico-pro {
+	width: 100%;
+	max-height: 113px;
+}
+
+.btnsPrd {
+	display: grid;
+	grid-area: zBtnCrud;
+	grid-auto-flow: column;
+	justify-content: space-around;
+	align-content: center;
+	padding: 0pt 8pt 0pt 8pt;
+}
+
+.container-zCategory {
+	display: grid;
+	grid-area: zCategory;
+	font-size: 0.6em;
+	color: #008cba;
+	letter-spacing: 1px;
+	padding: 2.5pt;
+}
+
+.container-zName {
+	display: grid;
+	grid-area: zName;
+	font-size: 1.2em;
+	color: #4e4e4e;
+	padding: 1.5pt;
+	align-content: center;
+}
+
+.container-zPrice {
+	grid-area: zPrice;
+	display: block;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #008cba;
+	padding: 1.5pt;
+}
+
+.container-zDesc {
+	display: grid;
+	grid-area: zDesc;
+	text-transform: none;
+	letter-spacing: 0;
+	margin-bottom: 17px;
+	color: #4e4e4e;
+	font-size: 0.7em;
+	line-height: 1.6em;
+	margin-right: 25px;
+	text-align: justify;
+}
+
+.display-none {
+	display: none !important;
+}
+
+.container-zBtn {
+	display: grid;
+	grid-area: zBtn;
+	grid-template-areas: 'zCart zQuanty';
+	grid-template-columns: 70% 25%;
+	justify-content: space-around;
+	align-content: center;
+	padding-right: 5pt;
+}
+
+button {
+	background: #008cba;
+	padding: 10px;
+	display: inline-block;
+	outline: 0;
+	border: 0;
+	margin: -1px;
+	border-radius: 2px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #f5f5f5;
+	cursor: pointer;
+}
+
+input {
+	size: 3pt;
+}
+
+.quantityPrd {
+	display: grid;
+	grid-area: zQuanty;
+	padding: 10px;
+	display: inline-block;
+	outline: 0;
+	/*	border: 0; */
+	margin: -1px;
+	border-radius: 2px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border-color: inherit;
+}
+
+.addCart {
+	display: grid;
+	grid-area: zCart;
+}
+
+.iconShop {
+	color: #f5f5f5;
+	font-size: 25px;
+	vertical-align: middle;
+}
+
+.btn-icon {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.btn-ico-color-delete {
+	border-radius: 12pt;
+	background-color: red;
+	padding: 8pt 12pt 8pt 12pt;
+}
+
+.btn-ico-color-edit {
+	border-radius: 12pt;
+	background-color: orange;
+	padding: 8pt 12pt 8pt 12pt;
+}
+
+.container-search {
+	width: 100%;
+	text-align: right;
+}
+
+.container-search .MuiTextField-root {
+	background-color: #fff;
+	width: 250px;
+}
